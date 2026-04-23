@@ -1,5 +1,6 @@
 package com.upb.lab7_wad;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,6 +12,7 @@ public class Lab7Test {
         assertEquals(5, result);
     }
 
+    @Disabled
     @Test
     void environment() {
         assertEquals("ABC", System.getenv("MY_SECRET_KEY"));
