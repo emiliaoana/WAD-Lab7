@@ -22,3 +22,8 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
+      # TODO: Run backend tests in the pipeline
+
+      # TODO: Run the Jacoco report in the pipeline (Jacoco already exists)
+
+      # TODO: Set GitHub secrets and read them in the pipeline (for the environmentTest)
