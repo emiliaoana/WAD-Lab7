@@ -25,7 +25,8 @@ Steps to configure it:
 - It's fine if the test fails on your local machine since you did not set the environment variable. 
 
 ### 3. Generate JaCoCo Coverage Report in the Pipeline
-JaCoCo is already set up in `build.gradle` for generating code coverage reports.  
+JaCoCo is already set up in `build.gradle` for generating code coverage reports. 
+*Note:* You can run it locally from `build.gradle` -> `jacocoTestReport`. The JaCoCo report is generated in the `build/reports/jacoco/test/html` directory and can visualize it in your browser by opening `index.html`.
 Modify the pipeline so that the JaCoCo report task is executed as part of the CI workflow.
 ### 4. Trigger the Pipeline only for Specific Branches
 The workflow should be triggered only when pushing on a specific branch (for example, `test`).
