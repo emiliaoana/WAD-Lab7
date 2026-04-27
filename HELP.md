@@ -14,8 +14,17 @@ Steps to configure it:
     - **Value:** `ABC`
 3. Update the pipeline configuration to expose this secret as an environment variable when running the tests.
 
-**Important:** Make sure the test is active by removing the `@Disabled` annotation from the `environment()` test.
+**Important:** 
+- Make sure the test is active by removing the `@Disabled` annotation from the `environment()` test.
+- It's fine if the test fails on your local machine since you did not set the environment variable. 
 
 ### 3. Generate JaCoCo Coverage Report in the Pipeline
 JaCoCo is already set up in `build.gradle` for generating code coverage reports.  
 Extend the pipeline so that the JaCoCo report task is executed as part of the CI workflow.
+### 4. Trigger the Pipeline only for Specific Branches
+The workflow should be triggered only when pushing on a specific branch (for example, `test`).
+
+How to create a new branch on GitHub & how to switch to it locally:
+1. Create a new branch on GitHub by clicking on 1 Branch, then click on New branch and give it a suitable name.
+![image](images/github-branch.png)
+
