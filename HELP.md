@@ -27,4 +27,7 @@ The workflow should be triggered only when pushing on a specific branch (for exa
 How to create a new branch on GitHub & how to switch to it locally:
 1. Create a new branch on GitHub by clicking on 1 Branch, then click on New branch and give it a suitable name.
 ![image](images/github-branch.png)
+2. In your local repository, switch to the new branch by running `git checkout branch-name`. Replace `branch-name` with the name of the branch you created.
+
+**You can check the branch you are currently on by running `git branch`.** 
 
