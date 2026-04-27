@@ -1,3 +1,9 @@
+### Before You Start
+Before you start **Lab 7**, make sure you set up the project correctly:
+
+1. Download the project as a zip file from GitHub & unzip it.
+2. Create a new GitHub repository and push the template code to it.
+
 ## Lab 7 Requirements
 
 ### 1. Run Backend Tests in the CI Pipeline
@@ -12,7 +18,7 @@ Steps to configure it:
 2. Create a new **repository secret** with the following details:
     - **Name:** `MY_SECRET_KEY`
     - **Value:** `ABC`
-3. Update the pipeline configuration to expose this secret as an environment variable when running the tests.
+3. Modify the existing GitHub Actions pipeline for the Gradle test task so that it passes this secret as an environment variable during test execution.
 
 **Important:** 
 - Make sure the test is active by removing the `@Disabled` annotation from the `environment()` test.
@@ -20,7 +26,7 @@ Steps to configure it:
 
 ### 3. Generate JaCoCo Coverage Report in the Pipeline
 JaCoCo is already set up in `build.gradle` for generating code coverage reports.  
-Extend the pipeline so that the JaCoCo report task is executed as part of the CI workflow.
+Modify the pipeline so that the JaCoCo report task is executed as part of the CI workflow.
 ### 4. Trigger the Pipeline only for Specific Branches
 The workflow should be triggered only when pushing on a specific branch (for example, `test`).
 
